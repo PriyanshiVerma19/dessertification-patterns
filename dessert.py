@@ -15,7 +15,7 @@ soil_data = climate_data[climate_data["PARAMETER"] == "GWETTOP"]
 
 # convert to monthly format
 months = ["JAN","FEB","MAR","APR","MAY","JUN",
-          "JUL","AUG","SEP","OCT","NOV","DEC"]
+           "JUL","AUG","SEP","OCT","NOV","DEC"]
 
 rain_long = rain_data.melt(id_vars=["YEAR"], value_vars=months,
                            var_name="Month", value_name="Rain")
